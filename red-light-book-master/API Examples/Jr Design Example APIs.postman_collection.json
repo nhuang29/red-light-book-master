@@ -1,0 +1,548 @@
+{
+	"info": {
+		"_postman_id": "5ef30604-6e30-40a9-b563-4623058ddb90",
+		"name": "Jr Design Example APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"testUser\",\n\t\"pass\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/signup/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signup",
+						""
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"testUser\",\n\t\"pass\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login",
+						""
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Chapter add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chapterid\": \"6\",\n\t\"chaptertext\": \"add\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/chapter/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"chapter",
+						"add"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Chapter update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chapterid\": \"6\",\n\t\"chaptertext\": \"update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/chapter/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"chapter",
+						"update"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Chapter Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chapterid\": \"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/chapter/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"chapter",
+						"delete"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "section add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sectionid\": \"101\",\n\t\"sectiontext\": \"add\",\n\t\"chapterid\":\"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/section/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"section",
+						"add"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Section update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sectionid\": \"101\",\n\t\"sectiontext\": \"update\",\n\t\"chapterid\":\"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/section/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"section",
+						"update"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Section Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sectionid\": \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/section/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"section",
+						"delete"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Tip add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sectionid\": \"101\",\n\t\"tipid\": \"1000\",\n\t\"tiptext\":\"add\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tip/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tip",
+						"add"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Tip update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sectionid\": \"101\",\n\t\"tipid\": \"1000\",\n\t\"tiptext\":\"update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tip/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tip",
+						"update"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "Tip Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipid\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tip/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tip",
+						"delete"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "TipExtra add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipid\": \"1000\",\n\t\"tipextratext\":\"add\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tipextra/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tipextra",
+						"add"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "TipExtra update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipid\": \"1000\",\n\t\"tipextratext\":\"update\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tipextra/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tipextra",
+						"update"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		},
+		{
+			"name": "TipExtra Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdDIiLCJpYXQiOjE1ODYzODgyOTUsImV4cCI6MTU4NjM5MTg5NX0.KcezV5nDeV_zUPbXDMQsNJc-A6vV6YwkX1X8BoAdO2A"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipid\": \"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/tipextra/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tipextra",
+						"delete"
+					]
+				},
+				"description": "sign in"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

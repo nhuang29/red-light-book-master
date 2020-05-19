@@ -1,0 +1,31 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS chapters(
+    chapterid INTEGER PRIMARY KEY AUTOINCREMENT, 
+    chaptertext TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS chaptersections(
+    sectionid INTEGER PRIMARY KEY AUTOINCREMENT, 
+    sectiontext TEXT NOT NULL, 
+    chapterid INTEGER NOT NULL,
+    FOREIGN KEY(chapterid) REFERENCES chapters(chapterid) ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS tips(
+    tipid INTEGER PRIMARY KEY AUTOINCREMENT,
+    sectionid INTEGER NOT NULL,
+    tiptext TEXT NOT NULL,
+    FOREIGN KEY(sectionid) REFERENCES chaptersections(sectionid) ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS tipextra(
+    tipid INTEGER PRIMARY KEY,
+    tipextratext TEXT NOT NULL,
+    FOREIGN KEY(tipid) REFERENCES tips(tipid) ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+CREATE TABLE IF NOT EXISTS users(
+    user TEXT PRIMARY KEY,
+    pass TEXT NOT NULL
+)

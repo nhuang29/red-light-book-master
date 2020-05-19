@@ -1,0 +1,20 @@
+{
+  "name": "red_light",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd red-light-client && npm start",
+    "server": "cd red-light-server && nodemon api.js",
+    "inst-base": "npm i",
+    "inst-client": "cd red-light-client && npm i && cd ..",
+    "inst-serv": "cd red-light-server && npm i && cd ..",
+    "inst": "concurrently --kill-others-on-fail \"npm run inst-base\" \"npm run inst-client\" \"npm run inst-serv\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "react-router": "^2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
